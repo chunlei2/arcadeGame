@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ItemType>GenericProject</ItemType>
+    <ProjectGuid>{AB2C7361-6271-427E-80FD-2017D508D12D}</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Default|AnyCPU' ">
+    <OutputPath>.\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="README.md" />
+    <None Include="index.html" />
+    <None Include="css\style.css" />
+    <None Include="images\Gem Blue.png" />
+    <None Include="images\Gem Green.png" />
+    <None Include="images\Gem Orange.png" />
+    <None Include="images\Heart.png" />
+    <None Include="images\Key.png" />
+    <None Include="images\Rock.png" />
+    <None Include="images\Selector.png" />
+    <None Include="images\Star.png" />
+    <None Include="images\char-boy.png" />
+    <None Include="images\char-cat-girl.png" />
+    <None Include="images\char-horn-girl.png" />
+    <None Include="images\char-pink-girl.png" />
+    <None Include="images\char-princess-girl.png" />
+    <None Include="images\enemy-bug.png" />
+    <None Include="images\grass-block.png" />
+    <None Include="images\stone-block.png" />
+    <None Include="images\water-block.png" />
+    <None Include="js\app.js" />
+    <None Include="js\engine.js" />
+    <None Include="js\resources.js" />
+  </ItemGroup>
+</Project>
