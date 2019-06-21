@@ -1,4 +1,4 @@
-/* Engine.js
+﻿/* Engine.js
  * This file provides the game loop functionality (update entities and render),
  * draws the initial game board on the screen, and then calls the update and
  * render methods on your player and enemy objects (defined in your app.js).
@@ -162,6 +162,16 @@ var Engine = (function(global) {
      */
     function reset() {
         // noop
+        var player = new Player();
+        // Empty allEnemies array
+        var allEnemies = [];
+
+        // Instantiate all enemies, set to 3, push to allEnemies array
+        for (var i = 0; i < 3; i++) {
+            var startSpeed = Math.floor(Math.random() * 10 + 1);
+            //enemys start off canvas (x = -100) at the following Y positions: 60, 145, 230
+            allEnemies.push(new Enemy(-100, 60 + (85 * i), startSpeed));
+        }
     }
 
     /* Go ahead and load all of the images we know we're going to need to
